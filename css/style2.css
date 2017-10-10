@@ -1,0 +1,90 @@
+.input-field {
+  font-size: 1em;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  /*  color: var(--white);
+  background: var(--red);*/
+
+appearance: none;
+  box-shadow: none;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  border: 0;
+}
+
+.grid-item {
+  border: none !important;
+}
+
+
+/*.green-check {
+	color:var(--green);
+}
+
+.red-x {
+	color:var(--red);
+}*/
+.checkmarked li:before {
+	/*content:"\2714 ";*/
+	content:"\2728";
+	color:var(--green);
+}
+
+.checkmarked .green-check:before {
+	/*content:"\2714 ";*/
+	content:"\2714";
+	color:var(--green);
+}
+
+.checkmarked .red-x:before{
+		content:"\2714";
+	color:var(--red);
+}
+
+.checkmarked {
+	list-style:none;
+	padding-left:0;
+	line-height:30px;
+}
+
+
+.pricing-container {
+  border: 1px solid var(--purple);
+  /*margin-left: 1em;*/
+  /*margin-right: 1em;*/
+  background-color: white;
+  /*margin-top: -3em;*/
+  padding: 2em;
+  /*padding-bottom: 0;*/
+}
+
+/* responsive styling */
+
+@media (min-width: 810px) {
+  .hidden, .hidden1 {
+    display: none;
+ }
+}
+
+/* this is when the 3 columns starts to break */
+
+@media (max-width: 810px) {
+ 
+.hidden {
+  display: block;
+}
+
+.hidden1 {
+  display: none;
+}
+}
+
+@media (max-width: 500px) {
+ 
+.hidden1 {
+  display: block;
+}
+}
+
