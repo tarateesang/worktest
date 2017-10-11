@@ -1,3 +1,7 @@
+/*body {
+  background:rgba(150,150,150,0.05);
+}*/
+
 .input-field {
   font-size: 1em;
   font-family: 'Work Sans', sans-serif;
@@ -46,6 +50,7 @@ content: "\2714";
 .pricing-parent {
   height: 100%;
   position: relative;
+  margin-top:-5em;
 }
 
 .pricing-item {
@@ -60,7 +65,7 @@ content: "\2714";
   position: inherit;
   border-radius: 5px;
   width:100%;
-  /*background-color:pink;*/
+  background-color:white;
 
 }
 
