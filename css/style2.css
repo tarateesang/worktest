@@ -17,17 +17,24 @@
 
 .checkmarked .green-check:before {
   /*content:"\2714 ";*/
-
 content: "\2714";
   color: var(--green);
   list-style-position: outside;
 }
 
-.checkmarked .red-x:before {
-  content: "\2715";
-  color: var(--red);
-  font-weight: bold;
+.checkmarked .blue-check:before {
+  /*content:"\2714 ";*/
+content: "\2714";
+  color: var(--blue);
+  list-style-position: outside;
 }
+.checkmarked .purple-check:before {
+  /*content:"\2714 ";*/
+content: "\2714";
+  color: var(--purple);
+  list-style-position: outside;
+}
+
 
 .checkmarked {
   list-style: none;
@@ -57,16 +64,32 @@ content: "\2714";
 
 }
 
+.pricing-container p {
+  color:var(--gray);
+}
+
 .pricing-free {
   border: 2px solid var(--green);
+}
+
+.pricing-free h4, .pricing-free h3, .pricing-free h2, .pricing-free h1 {
+  color:var(--green);
 }
 
 .pricing-standard {
   border: 2px solid var(--blue);
 }
 
+.pricing-standard h4, .pricing-standard h3, .pricing-standard h2, .pricing-standard h1{
+  color:var(--blue);
+}
+
 .pricing-enterprise {
   border: 2px solid var(--purple);
+}
+
+.pricing-enterprise h4, .pricing-enterprise h3, .pricing-enterprise h2, .pricing-enterprise h1 {
+  color: var(--purple);
 }
 
 .pricing-button {
