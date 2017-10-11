@@ -19,24 +19,32 @@
   border: none !important;
 }
 
-.checkmarked .green-check:before {
-  /*content:"\2714 ";*/
-content: "\2714";
-  color: var(--green);
+
+/*.checkmarked .green-check:before*/
+.checkmarked .green-check{
+  list-style-image: url('../images/cogo_check_green.svg');
+  /*content: "\2714";*/
+  /*color: var(--green);*/
   list-style-position: outside;
+  margin-left:1em;
+  padding-left:1em;
 }
 
-.checkmarked .blue-check:before {
-  /*content:"\2714 ";*/
-content: "\2714";
-  color: var(--blue);
+.checkmarked .blue-check{
+list-style-image: url('../images/cogo_check_blue.svg');
+/*content: "\2714";
+  color: var(--blue);*/
   list-style-position: outside;
+  margin-left:1em;
+  padding-left:1em;
 }
-.checkmarked .purple-check:before {
-  /*content:"\2714 ";*/
-content: "\2714";
-  color: var(--purple);
+.checkmarked .purple-check {
+list-style-image: url('../images/cogo_check_purple.svg');
+/*content: "\2714";
+  color: var(--purple);*/
   list-style-position: outside;
+  margin-left:1em;
+  padding-left:1em;
 }
 
 
