@@ -15,38 +15,52 @@
   border: none !important;
 }
 
-/*.checkmarked li:before {
-content: "\2728";
-  color: var(--green);
-}*/
-
 .checkmarked .green-check:before {
   /*content:"\2714 ";*/
 
 content: "\2714";
   color: var(--green);
-  list-style-position:outside;
+  list-style-position: outside;
 }
 
 .checkmarked .red-x:before {
   content: "\2715";
   color: var(--red);
-  font-weight:bold;
+  font-weight: bold;
 }
 
 .checkmarked {
-  list-style:none;
-  list-style-position:outside;
-  /*padding-left: 0;*/
-  padding:0;
-  /*padding-left:1em;*/
+  list-style: none;
+  list-style-position: outside;
+  padding: 0;
   line-height: 30px;
+}
+
+.pricing-parent {
+  height: 100%;
+  position: relative;
+}
+
+.pricing-item {
+  height: inherit !important;
 }
 
 .pricing-container {
   border: 1px solid var(--purple);
-  background-color: white;
   padding: 2em;
+  bottom: 0;
+  height: inherit;
+  position: inherit;
+}
+
+.pricing-button {
+  bottom: 0 !important;
+  position: absolute;
+}
+
+.pricing-divider {
+  margin: 2em 0;
+  opacity: 0.4;
 }
 
 /* ========================
@@ -54,29 +68,39 @@ content: "\2714";
    ===================== */
 
 @media (min-width: 810px) {
-  .pricing-overflow {
-    height: 12em;
-    /*background-color: pink;*/
+  .checkmarked {
+    margin-bottom: 5em;
  }
 }
 
 /* this is when the 3 columns starts to break */
 
 @media (max-width: 810px) {
-  .pricing-overflow {
-    height: 15em;
-    /*background-color:purple;*/
+  .checkmarked {
+    margin-bottom: 5em;
  }
+ 
+ .pricing-parent {
+   height: 100%;
+   position: relative;
+}
 }
 
 @media (max-width: 689px) {
-  .pricing-overflow {
-    height: 7em;
-    /*background-color:orange;*/
+  .pricing-button {
+    position: relative;
  }
+ 
+ .pricing-parent {
+   height: inherit;
+   position: relative;
 }
 
-@media (max-width: 500px) {
-  .pricing-overflow {}
+.pricing-container {
+  top: 0;
+  height: inherit;
 }
+}
+
+@media (max-width: 500px) {}
 
