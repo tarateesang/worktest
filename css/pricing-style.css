@@ -22,30 +22,23 @@
 
 /*.checkmarked .green-check:before*/
 .checkmarked .green-check{
-  list-style-image: url('../images/cogo_check_green.svg');
-  /*content: "\2714";*/
-  /*color: var(--green);*/
+  background:url('../images/cogo_check_green.svg') left 7px no-repeat;
+  background-size: 15px;
   list-style-position: outside;
-  margin-left:1em;
-  padding-left:1em;
+  padding-left:2em;
 }
 
 .checkmarked .blue-check{
-list-style-image: url('../images/cogo_check_blue.svg');
-/*content: "\2714";
-  color: var(--blue);*/
+  background:url('../images/cogo_check_blue.svg') left 7px no-repeat;
+  background-size: 15px;
   list-style-position: outside;
-  margin-left:1em;
-  padding-left:1em;
+  padding-left:2em;
 }
 .checkmarked .purple-check {
-list-style-image: url('../images/cogo_check_purple.svg');
-/*content: "\2714";
-  color: var(--purple);*/
+  background:url('../images/cogo_check_purple.svg') left 7px no-repeat;
+  background-size: 15px;
   list-style-position: outside;
-  margin-left:1em;
-  padding-left:1em;
-}
+  padding-left:2em;}
 
 
 .checkmarked {
