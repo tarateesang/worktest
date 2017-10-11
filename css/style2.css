@@ -46,16 +46,38 @@ content: "\2714";
 }
 
 .pricing-container {
-  border: 1px solid var(--purple);
+  /*border: 1px solid var(--purple);*/
   padding: 2em;
   bottom: 0;
   height: inherit;
   position: inherit;
+  border-radius: 5px;
+  width:100%;
+  /*background-color:pink;*/
+
+}
+
+.pricing-free {
+  border: 2px solid var(--green);
+}
+
+.pricing-standard {
+  border: 2px solid var(--blue);
+}
+
+.pricing-enterprise {
+  border: 2px solid var(--purple);
 }
 
 .pricing-button {
   bottom: 0 !important;
   position: absolute;
+  display:block;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  /*width:calc(inherit/6);*/
+  /*left:calc(inherit/6);*/
+
 }
 
 .pricing-divider {
@@ -89,6 +111,7 @@ content: "\2714";
 @media (max-width: 689px) {
   .pricing-button {
     position: relative;
+    width:100%;
  }
  
  .pricing-parent {
