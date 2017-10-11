@@ -29,8 +29,9 @@ content: "\2714";
 }
 
 .checkmarked .red-x:before {
-  content: "\2714";
+  content: "\2715";
   color: var(--red);
+  font-weight:bold;
 }
 
 .checkmarked {
