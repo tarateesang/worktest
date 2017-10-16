@@ -11,7 +11,11 @@
   --gray:#4b555f;
 }
 
-
+.row:before, .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .text-wrap {
 	clear:both;
@@ -47,7 +51,7 @@
 }
 
 
-/*#particles-js{
+#particles-js{
 	position:fixed;
     z-index: -1000000;
     top:0;
@@ -58,21 +62,19 @@
 	max-height: 30em;
 	background:linear-gradient(45deg, var(--green) 15%,var(--blue) 75%,var(--purple) 95%,var(--red) 115%); 
 	background-position: center;
-}*/
+}
 
 
 /* tara's experimentation */
-#particles-js{
-	/*position:fixed;*/
+/*#particles-js{
     z-index: -1000000;
     left:0%;
     width: 100%;
     height: inherit;
     min-height: 25em;
     max-height: 30em;
-	background:linear-gradient(45deg, var(--green) 15%,var(--blue) 75%,var(--purple) 95%,var(--red) 115%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	background-position: center;
-}
+	background:linear-gradient(45deg, var(--green) 15%,var(--blue) 75%,var(--purple) 95%,var(--red) 115%); 
+}*/
 
 #particles-js2{
     /*position:absolute;*/
@@ -293,7 +295,7 @@
 		display: inline-block;
 		margin-top:20px;
 		margin-bottom: 20px;
-		border:1px solid var(--green);
+		/*border:1px solid var(--green);*/
 	}
 
 	.pricing-3col {
@@ -379,7 +381,7 @@
 		display: inline-block;
 		margin-top:20px;
 		margin-bottom: 20px;
-		border:1px solid var(--green);
+		/*border:1px solid var(--green);*/
 	}
 
 	.l-6col {
@@ -387,7 +389,7 @@
 		display: inline-block;
 		margin-top:20px;
 		margin-bottom: 20px;
-		border:1px solid var(--green);
+		/*border:1px solid var(--green);*/
 	}
 
 	.footer-col {
